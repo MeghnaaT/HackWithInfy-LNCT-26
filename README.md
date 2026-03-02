@@ -1,2 +1,2 @@
 # HackWithInfy-LNCT-26
-all problem statements and questions practicing for the Hackwithinfy or placement.
+All problem statements and questions practicing for the Hackwithinfy or placement. Along with leetcode Top-150 questions
