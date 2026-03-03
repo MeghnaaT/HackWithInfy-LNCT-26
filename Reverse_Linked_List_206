@@ -1,0 +1,16 @@
+# Leetcode link: https://leetcode.com/problems/reverse-linked-list/
+# Solving iteratively(most optimal) using three pointers
+
+class Solution(object):
+    def reverseList(self, head):
+        prev, curr = None, head
+
+        while curr: # while curr is not null
+            temp = curr.next # stored the value
+            curr.next = prev
+            prev = curr
+            curr = temp
+        return prev
+
+#TC: O(n)
+# sc: O(1)
