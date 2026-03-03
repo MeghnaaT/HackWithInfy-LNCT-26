@@ -1,0 +1,14 @@
+# Leetcode Link: https://leetcode.com/problems/linked-list-cycle/?envType=study-plan-v2&envId=top-interview-150
+
+# Using Floyd's Algo, Hare and Tortoise Algo, Slow and Fast Pointer Algo
+
+class Solution(object):
+    def hasCycle(self, head):
+        slow = fast = head
+
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+            if slow == fast:
+                return True
+        return False        
